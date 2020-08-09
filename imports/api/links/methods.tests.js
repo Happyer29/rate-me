@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // Tests for links methods
 //
 // https://guide.meteor.com/testing.html

@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import './hello.html';
 
 Template.hello.onCreated(function helloOnCreated() {
@@ -12,8 +13,8 @@ Template.hello.helpers({
 });
 
 Template.hello.events({
-  'click button'(event, instance) {
+  'click button'(event, templateInstance) {
     // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
+    templateInstance.counter.set(templateInstance.counter.get() + 1);
   },
 });

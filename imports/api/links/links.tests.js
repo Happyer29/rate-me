@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // Tests for the behavior of the links collection
 //
 // https://guide.meteor.com/testing.html
@@ -14,6 +15,7 @@ if (Meteor.isServer) {
         url: 'https://www.meteor.com',
       });
       const added = Links.find({ _id: linkId });
+      // eslint-disable-next-line no-underscore-dangle
       const collectionName = added._getCollectionName();
       const count = added.count();
 

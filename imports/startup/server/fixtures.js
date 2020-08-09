@@ -29,6 +29,6 @@ Meteor.startup(() => {
       },
     ];
 
-    data.forEach(link => Links.insert(link));
+    data.forEach((link) => Links.insert(link));
   }
 });
